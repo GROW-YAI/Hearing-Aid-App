@@ -16,7 +16,7 @@ const About = () => {
       </p>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
-        {/* Widex Moment App */}
+       
         <div className="bg-white shadow-lg rounded-lg overflow-hidden">
           <img src={phone} alt="Widex Moment app" className="w-full h-56 object-cover" />
           <div className="p-6 text-left">
@@ -29,7 +29,6 @@ const About = () => {
           </div>
         </div>
 
-        {/* Widex Sound Assist */}
         <div className="bg-white shadow-lg rounded-lg overflow-hidden">
           <img src={sound} alt="Widex Sound Assist" className="w-full h-56 object-cover" />
           <div className="p-6 text-left">
@@ -41,7 +40,7 @@ const About = () => {
           </div>
         </div>
 
-        {/* Widex SoundConnect */}
+        
         <div className="bg-white shadow-lg rounded-lg overflow-hidden">
           <img src={drive} alt="Widex SoundConnect" className="w-full h-56 object-cover" />
           <div className="p-6 text-left">
@@ -55,7 +54,7 @@ const About = () => {
         </div>
       </div>
 
-      {/* Finding Relief From Tinnitus */}
+    
       <div className="flex flex-col md:flex-row items-center justify-center mt-16 max-w-6xl mx-auto">
         <img src={relief} alt="Tinnitus Relief" className="w-full md:w-1/2 object-cover" />
         <div className="p-6 text-center md:text-left">
@@ -72,7 +71,7 @@ const About = () => {
         </div>
       </div>
 
-      {/* People That Know Sound, Love Widex PureSound */}
+    
       <div className="flex flex-col md:flex-row items-center justify-center mt-16 max-w-6xl mx-auto">
         <div className="p-6 text-center md:text-left">
           <h2 className="text-3xl font-semibold tracking-wide text-gray-900">
