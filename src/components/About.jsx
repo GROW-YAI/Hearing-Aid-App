@@ -5,9 +5,11 @@ import drive from "../assets/images/drive.png";
 import relief from "../assets/images/relief.png";
 import love from "../assets/images/love.png";
 
+
 const About = () => {
   return (
     <div className="bg-gray-100 py-16 px-6 text-center">
+      
       <h2 className="text-3xl font-semibold tracking-wide text-gray-900">
         CONNECT AND STREAM
       </h2>

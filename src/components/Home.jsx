@@ -6,7 +6,7 @@ const Home = () => {
   return (
     <div className="bg-gradient-to-r from-green-100 via-yellow-100 to-orange-100 min-h-screen flex items-center justify-center px-8 pt-4">
       <div className="max-w-7xl w-full grid grid-cols-1 md:grid-cols-2 items-center gap-8">
-        {/* Left Section */}
+       
         <div>
           <h1 className="text-5xl font-bold text-gray-900">
             Leaders In <br /> Compassionate{" "}
@@ -18,7 +18,7 @@ const Home = () => {
             of life.
           </p>
 
-          {/* Buttons */}
+         
           <div className="mt-6 flex gap-4">
             <button className="bg-blue-800 text-white px-6 py-3 rounded-md font-semibold hover:bg-blue-900 transition">
               Our Specialists
@@ -30,16 +30,14 @@ const Home = () => {
           </div>
         </div>
 
-        {/* Right Section - Image and Shapes */}
+
         <div className="relative flex justify-center">
-          {/* Main Image */}
           <img
             src={Land}
             alt="Smiling Woman"
             className="relative z-10 w-80 md:w-96"
           />
 
-          {/* Decorative Elements */}
           <div className="absolute -top-10 left-0 w-40 h-40 rounded-full border-8 border-orange-400 opacity-50"></div>
           <div className="absolute -bottom-10 right-10 w-24 h-24 bg-yellow-200 rounded-full opacity-50"></div>
           <div className="absolute -top-5 right-0 text-orange-300 text-5xl">😊</div>
