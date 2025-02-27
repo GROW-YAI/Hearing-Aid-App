@@ -5,7 +5,7 @@ const Biograph = () => {
   return (
     <div className="font-sans">
       
-      <div className="bg-white p-10 flex flex-col md:flex-row items-center justify-between min-h-[500px]">
+      <div className="bg-[#fcfcfc] p-10 flex flex-col md:flex-row items-center justify-between min-h-[300px]">
         <div className="md:w-2/3">
           <h1 className="text-4xl font-bold mb-4">
             Faila Mahamudu: Bridging Worlds Through Sound
@@ -25,7 +25,7 @@ const Biograph = () => {
         </div>
       </div>
 
-      <div className="bg-orange-600 text-white p-10 min-h-[500px]">
+      <div className="bg-gray-100 text-black p-10 min-h-[300px]">
         <h2 className="text-3xl font-bold mb-6">Her Story: From Techiman to Innovation</h2>
         <div className="md:flex md:space-x-10">
           <div className="md:w-1/2 mb-6 md:mb-0">

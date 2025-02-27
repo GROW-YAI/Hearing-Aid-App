@@ -9,12 +9,12 @@ const Home = () => {
        
         <div>
           <h1 className="text-5xl font-bold text-gray-900">
-            Leaders In <br /> Compassionate{" "}
-            <span className="text-orange-500">ENT Care</span>
+            Faila<br />Smart{" "}
+            <span className="text-orange-500">Device</span>
           </h1>
           <p className="mt-4 text-gray-600">
             Our facility provides quick and effective treatment to ensure that
-            our patients can resume their daily activities with a high quality
+            our clients can resume their daily activities with a high quality
             of life.
           </p>
 
