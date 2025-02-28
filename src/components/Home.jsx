@@ -1,49 +1,66 @@
-import React from "react";
-import { FaRegClock } from "react-icons/fa6";
-import Land from '../assets/images/land.png';
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
+import bonoImage from "../assets/images/bono.png";
+import comImage from "../assets/images/com.png";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faDeaf, faHandsHelping } from "@fortawesome/free-solid-svg-icons";
 
 const Home = () => {
+  const images = [
+    {
+      src: bonoImage,
+      title: "Breaking Barriers in Communication",
+      description: "Faila Mahamudu, a visually impaired innovator, is dedicated to improving communication for the deaf community in Techiman.",
+      icon: faDeaf
+    },
+    {
+      src: comImage,
+      title: "Affordable, Locally-Made Hearing Aids",
+      description: "Developing an accessible and cost-effective solution to enhance inclusion and independence for individuals with hearing impairments.",
+      icon: faHandsHelping
+    }
+  ];
+
+  const settings = {
+    dots: false,
+    infinite: true,
+    speed: 2000,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    fade: true,
+    cssEase: "ease-in-out",
+    arrows: false,
+    pauseOnHover: false,
+  };
+  
+  
+
   return (
-    <div className="bg-gradient-to-r from-green-100 via-yellow-100 to-orange-100 min-h-screen flex items-center justify-center px-8 pt-4">
-      <div className="max-w-7xl w-full grid grid-cols-1 md:grid-cols-2 items-center gap-8">
-       
-        <div>
-          <h1 className="text-5xl font-bold text-gray-900">
-            Faila<br />Smart{" "}
-            <span className="text-orange-500">Device</span>
-          </h1>
-          <p className="mt-4 text-gray-600">
-            Our facility provides quick and effective treatment to ensure that
-            our clients can resume their daily activities with a high quality
-            of life.
-          </p>
-
-         
-          <div className="mt-6 flex gap-4">
-            <button className="bg-blue-800 text-white px-6 py-3 rounded-md font-semibold hover:bg-blue-900 transition">
-              Our Specialists
-            </button>
-            <button className="bg-white shadow-md flex items-center gap-2 px-6 py-3 rounded-md font-semibold hover:shadow-lg transition">
-              <FaRegClock className="text-orange-500" />
-              Schedule An Appointment
-            </button>
+    <div className="relative mt-20 z-10"> 
+      <Slider {...settings} className="relative overflow-hidden">
+        {images.map((image, index) => (
+          <div key={index} className="relative">
+            <img
+              src={image.src}
+              alt={image.title}
+              className="w-full object-cover"
+              style={{ height: "550px" }}  
+            />
+            <div className="absolute inset-0 flex flex-col items-center justify-center text-center p-6 bg-opacity-50">
+              <FontAwesomeIcon icon={image.icon} size="3x" className="text-[#FF1B2A] mb-3" />
+              <h3 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-[#FF1B2A] mb-2">
+                {image.title}
+              </h3>
+              <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-white max-w-2xl">
+                {image.description}
+              </p>
+            </div>
           </div>
-        </div>
-
-
-        <div className="relative flex justify-center">
-          <img
-            src={Land}
-            alt="Smiling Woman"
-            className="relative z-10 w-80 md:w-96"
-          />
-
-          <div className="absolute -top-10 left-0 w-40 h-40 rounded-full border-8 border-orange-400 opacity-50"></div>
-          <div className="absolute -bottom-10 right-10 w-24 h-24 bg-yellow-200 rounded-full opacity-50"></div>
-          <div className="absolute -top-5 right-0 text-orange-300 text-5xl">😊</div>
-          <div className="absolute -bottom-16 left-5 text-yellow-400 text-4xl">〰</div>
-        </div>
-      </div>
+        ))}
+      </Slider>
     </div>
   );
 };
