@@ -2,7 +2,7 @@ import Slider from "react-slick";
 import aboutImage from '../assets/images/about.png';
 import portraitImage from '../assets/images/portrait.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHandsHelping, faMicrophone, faUsers, faGlobe, faQuoteLeft } from '@fortawesome/free-solid-svg-icons';
+import { faHandsHelping, faMicrophone, faUsers,faWater, faDove, faGlobe, faQuoteLeft } from '@fortawesome/free-solid-svg-icons';
 
 const settings = {
   dots: false,
@@ -28,18 +28,46 @@ const Sample = () => {
         <div className="md:w-1/2 mt-8 md:mt-0 md:pl-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">Our Mission</h2>
           <div className="space-y-6">
-            <div className="flex items-start">
-              <div className="w-12 h-12 bg-[#FF1B2A] rounded-full flex justify-center items-center text-white mr-4">
-                <FontAwesomeIcon icon={faHandsHelping} size="lg" />
-              </div>
-              <div>
-                <h4 className="text-lg md:text-xl font-bold">Empowering the Deaf Community</h4>
-                <p className="text-gray-600 text-sm md:text-base">
-                  Faila Mahamudu, a visually impaired young woman from Techiman, is dedicated to enhancing communication for individuals with hearing impairments by developing affordable, locally-made hearing aids.
-                </p>
-              </div>
-            </div>
-          </div>
+  {/* Empowering the Deaf Community */}
+  <div className="flex items-start">
+    <div className="w-12 h-12 bg-[#FF1B2A] rounded-full flex justify-center items-center text-white mr-4">
+      <FontAwesomeIcon icon={faHandsHelping} size="lg" />
+    </div>
+    <div>
+      <h4 className="text-lg md:text-xl font-bold">Empowering the Deaf Community</h4>
+      <p className="text-gray-600 text-sm md:text-base">
+        Faila Mahamudu, a visually impaired young woman from Techiman, is dedicated to enhancing communication for individuals with hearing impairments by developing affordable, locally-made hearing aids.
+      </p>
+    </div>
+  </div>
+
+  {/* Innovation and Accessibility */}
+  <div className="flex items-start">
+    <div className="w-12 h-12 bg-[#FF1B2A] rounded-full flex justify-center items-center text-white mr-4">
+      <FontAwesomeIcon icon={faWater} size="lg" />
+    </div>
+    <div>
+      <h4 className="text-lg md:text-xl font-bold">Innovative Solutions</h4>
+      <p className="text-gray-600 text-sm md:text-base">
+        By developing a cost-effective and accessible hearing aid, Faila aims to enhance communication between the deaf and the general public, fostering inclusion and independence.
+      </p>
+    </div>
+  </div>
+
+  {/* Support and Growth */}
+  <div className="flex items-start">
+    <div className="w-12 h-12 bg-[#FF1B2A] rounded-full flex justify-center items-center text-white mr-4">
+      <FontAwesomeIcon icon={faDove} size="lg" />
+    </div>
+    <div>
+      <h4 className="text-lg md:text-xl font-bold">Seeking Support</h4>
+      <p className="text-gray-600 text-sm md:text-base">
+        To bring her vision to life, Faila seeks mentorship, funding, and technical assistance, ensuring that individuals with hearing impairments in her region gain the support they deserve.
+      </p>
+    </div>
+  </div>
+</div>
+
         </div>
       </div>
 
