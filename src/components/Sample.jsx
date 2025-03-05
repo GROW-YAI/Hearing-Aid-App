@@ -20,7 +20,7 @@ const settings = {
 const Sample = () => {
   return (
     <div className="bg-white py-16">
-      <div className="container mx-auto px-4 flex flex-col md:flex-row items-center justify-between mt-6">
+      <div className="container mx-auto px-4 flex flex-col md:flex-row items-center justify-between ">
         <div className="md:w-1/2 relative">
           <img src={aboutImage} alt="About Us" className="w-full h-auto rounded-lg shadow-lg" />
         </div>

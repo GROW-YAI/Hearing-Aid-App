@@ -16,8 +16,8 @@ const Services = () => {
       {/* Problem Section */}
       <div className="flex flex-col md:flex-row items-center justify-between px-16 py-12 bg-white">
         <div className="md:w-1/2">
-          <h2 className="text-5xl font-bold text-[#FF1B2A] mb-8">
-            The Problem: Hearing Aid Accessibility in Bono East
+          <h2 className="text-5xl font-bold text-[#FF1B2A] mb-8"> 
+           <h2 className='text-[#1D1E22]'>The Problem:</h2>  Hearing Aid Accessibility in Bono East
           </h2>
           <div className="space-y-8">
             <div className="flex items-start space-x-4">
