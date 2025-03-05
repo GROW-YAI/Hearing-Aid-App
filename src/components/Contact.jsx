@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaPhone, FaFacebook, FaTwitter, FaInstagram } from 'react-icons/fa';
+import { FaPhone, FaFacebook, FaTiktok, FaInstagram,  FaLinkedinIn } from 'react-icons/fa';
 import reliefImage from '../assets/images/relief.png';
 
 const Contact = () => {
@@ -16,21 +16,24 @@ const Contact = () => {
         </div>
         
         <div className="mt-20 md:mt-24">
-          <h2 className="text-xl md:text-2xl font-semibold">Contact Me</h2>
+          <h2 className="text-xl md:text-2xl font-semibold text-[#FF1B2A]">Contact Me</h2>
           <p className="text-gray-600 mt-2 flex items-center justify-center gap-2 text-lg md:text-xl">
             <FaPhone /> +123 456 7890
           </p>
           
         
-          <div className="flex justify-center gap-6 mt-6 text-blue-600 text-2xl md:text-3xl">
-            <a href="#" className="hover:text-blue-800">
+          <div className="flex justify-center gap-6 mt-6 text-[#FF1B2A] text-2xl md:text-3xl">
+            <a href="https://www.facebook.com/faliasmartdevice/" className="hover:text-[#FF1B2A]">
               <FaFacebook />
             </a>
-            <a href="#" className="hover:text-blue-800">
-              <FaTwitter />
+            <a href="https://www.tiktok.com/@failasmartdevice" className="hover:text-[#FF1B2A]">
+              <FaTiktok />
             </a>
-            <a href="#" className="hover:text-pink-600">
+            <a href="https://www.instagram.com/faliasmartdevice/" className="hover:text-[#FF1B2A]">
               <FaInstagram />
+            </a>
+            <a href="https://www.linkedin.com/company/106643819/admin/dashboard/" className="hover:text-[#FF1B2A]">
+              <FaLinkedinIn/>
             </a>
           </div>
         </div>

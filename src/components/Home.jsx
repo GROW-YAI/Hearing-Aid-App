@@ -33,10 +33,10 @@ const Home = () => {
   };
 
   return (
-    <div className="relative mt-20 z-10"> 
+    <div className="relative mt-[21] z-10"> 
       <Slider {...settings} className="relative overflow-hidden">
         {images.map((image, index) => (
-          <div key={index} className="relative w-full h-[600px]">
+          <div key={index} className="relative w-full h-[690px]">
             <img
               src={image.src}
               alt={image.title}
