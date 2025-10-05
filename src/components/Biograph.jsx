@@ -1,4 +1,5 @@
 import React from "react";
+import LazyImage from './LazyImage';
 import Hero from '../assets/images/hero.jpg';
 
 const Biograph = () => {
@@ -17,7 +18,7 @@ const Biograph = () => {
           </p>
         </div>
         <div className="md:w-1/3 mt-6 md:mt-0">
-          <img
+          <LazyImage
             src={Hero}
             alt="Sound wave"
             className="w-full h-auto rounded"

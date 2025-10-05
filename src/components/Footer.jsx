@@ -20,9 +20,38 @@ const Footer = () => {
         <div>
           <h2 className="text-xl font-bold text-[#FF1B2A]">Quick Links</h2>
           <ul className="mt-3 space-y-2">
-            <li><a href="#" className="hover:text-[#FF1B2A] transition">Home</a></li>
-            <li><a href="#" className="hover:text-[#FF1B2A] transition">About</a></li>
-            <li><a href="#" className="hover:text-[#FF1B2A] transition">Services</a></li>
+            <li>
+              <button 
+                onClick={() => document.getElementById('home')?.scrollIntoView({ behavior: 'smooth' })}
+                className="hover:text-[#FF1B2A] transition text-left"
+              >
+                Home
+              </button>
+            </li>
+            <li>
+              <button 
+                onClick={() => document.getElementById('services')?.scrollIntoView({ behavior: 'smooth' })}
+                className="hover:text-[#FF1B2A] transition text-left"
+              >
+                About Us
+              </button>
+            </li>
+            <li>
+              <button 
+                onClick={() => document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' })}
+                className="hover:text-[#FF1B2A] transition text-left"
+              >
+                Services
+              </button>
+            </li>
+            <li>
+              <button 
+                onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
+                className="hover:text-[#FF1B2A] transition text-left"
+              >
+                Contact
+              </button>
+            </li>
           </ul>
         </div>
 
