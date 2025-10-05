@@ -1,4 +1,5 @@
 import React from "react";
+import LazyImage from "./LazyImage";
 import phone from "../assets/images/phone.png";
 import sound from "../assets/images/sound.png";
 import drive from "../assets/images/drive.png";
@@ -22,7 +23,7 @@ const About = () => {
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
        
         <div className="bg-white shadow-lg rounded-lg overflow-hidden">
-          <img src={phone} alt="Widex Moment app" className="w-full h-56 object-cover" />
+          <LazyImage src={phone} alt="Widex Moment app" className="w-full h-56 object-cover" />
           <div className="p-6 text-left">
             <h3 className="text-lg font-bold text-gray-900">Faila Smart Device  Moment app</h3>
             <p className="text-gray-600 mt-2">
@@ -34,7 +35,7 @@ const About = () => {
         </div>
 
         <div className="bg-white shadow-lg rounded-lg overflow-hidden">
-          <img src={sound} alt="Widex Sound Assist" className="w-full h-56 object-cover" />
+          <LazyImage src={sound} alt="Widex Sound Assist" className="w-full h-56 object-cover" />
           <div className="p-6 text-left">
             <h3 className="text-lg font-bold text-gray-900">Faila Smart Device  Sound Assist™</h3>
             <p className="text-gray-600 mt-2">
@@ -46,7 +47,7 @@ const About = () => {
 
         
         <div className="bg-white shadow-lg rounded-lg overflow-hidden">
-          <img src={drive} alt="Widex SoundConnect" className="w-full h-56 object-cover" />
+          <LazyImage src={drive} alt="Widex SoundConnect" className="w-full h-56 object-cover" />
           <div className="p-6 text-left">
             <h3 className="text-lg font-bold text-gray-900">Faila Smart Device SoundConnect™</h3>
             <p className="text-gray-600 mt-2">
@@ -60,7 +61,7 @@ const About = () => {
 
     
       <div className="flex flex-col md:flex-row items-center justify-center mt-16 max-w-6xl mx-auto">
-        <img src={relief} alt="Tinnitus Relief" className="w-full md:w-1/2 object-cover" />
+        <LazyImage src={relief} alt="Tinnitus Relief" className="w-full md:w-1/2 object-cover" />
         <div className="p-6 text-center md:text-left">
           <h2 className="text-3xl font-semibold tracking-wide text-gray-900">
             FINDING RELIEF FROM FAILA SMART DEVICE
@@ -89,7 +90,7 @@ const About = () => {
             Meet our Sound Ambassadors
           </button>
         </div>
-        <img src={love} alt="Love Widex PureSound" className="w-full md:w-1/2 object-cover" />
+        <LazyImage src={love} alt="Love Widex PureSound" className="w-full md:w-1/2 object-cover" />
       </div>
     </div>
   );

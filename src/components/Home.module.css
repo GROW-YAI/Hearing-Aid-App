@@ -1,0 +1,94 @@
+/* Mobile-specific carousel improvements */
+.carousel-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.carousel-slide {
+  position: relative;
+  width: 100%;
+}
+
+.carousel-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.carousel-content {
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  right: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 0.5rem;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  max-width: 20rem;
+  margin: 0 auto;
+}
+
+/* Mobile optimizations */
+@media (max-width: 640px) {
+  .carousel-content {
+    bottom: 0.5rem;
+    left: 0.5rem;
+    right: 0.5rem;
+    padding: 0.75rem;
+    max-width: calc(100% - 1rem);
+  }
+  
+  .carousel-slide {
+    min-height: 400px;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 768px) {
+  .carousel-content {
+    bottom: 1rem;
+    max-width: 28rem;
+  }
+  
+  .carousel-slide {
+    min-height: 500px;
+  }
+}
+
+@media (min-width: 769px) {
+  .carousel-content {
+    bottom: 2.5rem;
+    left: 0;
+    right: 0;
+    max-width: 36rem;
+  }
+  
+  .carousel-slide {
+    min-height: 600px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .carousel-slide {
+    min-height: 690px;
+  }
+}
+
+/* Improve touch interactions */
+.slick-slider {
+  touch-action: pan-y;
+}
+
+.slick-list {
+  overflow: hidden;
+}
+
+.slick-track {
+  display: flex;
+  align-items: center;
+}
