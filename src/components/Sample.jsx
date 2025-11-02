@@ -186,7 +186,7 @@ const Sample = () => {
         </div>
       </div>
 
-      {/* Testimonials Section */}
+      {/* Testimonials Section - COMMENTED OUT 
       <div className="bg-white py-16 lg:py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12 lg:mb-16">
@@ -198,7 +198,6 @@ const Sample = () => {
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-10">
-            {/* Testimonial 1 */}
             <div className="bg-gradient-to-br from-white to-gray-50 rounded-2xl shadow-xl p-8 hover:shadow-2xl transition-all duration-300 hover:-translate-y-1 border border-gray-100">
               <div className="w-12 h-12 bg-gradient-to-br from-[#FF1B2A] to-red-600 rounded-full flex items-center justify-center mb-6">
                 <FontAwesomeIcon icon={faQuoteLeft} size="lg" className="text-white" />
@@ -215,7 +214,6 @@ const Sample = () => {
               </div>
             </div>
 
-            {/* Testimonial 2 - Featured */}
             <div className="bg-gradient-to-br from-[#FF1B2A] to-red-600 text-white rounded-2xl shadow-2xl p-8 hover:shadow-3xl transition-all duration-300 hover:-translate-y-2 transform lg:scale-105 relative overflow-hidden">
               <div className="absolute top-0 right-0 w-32 h-32 bg-white/10 rounded-full -translate-y-16 translate-x-16"></div>
               <div className="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center mb-6 relative z-10">
@@ -233,7 +231,6 @@ const Sample = () => {
               </div>
             </div>
 
-            {/* Testimonial 3 */}
             <div className="bg-gradient-to-br from-white to-gray-50 rounded-2xl shadow-xl p-8 hover:shadow-2xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 md:col-span-2 lg:col-span-1">
               <div className="w-12 h-12 bg-gradient-to-br from-[#FF1B2A] to-red-600 rounded-full flex items-center justify-center mb-6">
                 <FontAwesomeIcon icon={faQuoteLeft} size="lg" className="text-white" />
@@ -252,6 +249,7 @@ const Sample = () => {
           </div>
         </div>
       </div>
+      */}
     </div>
   );
 };
