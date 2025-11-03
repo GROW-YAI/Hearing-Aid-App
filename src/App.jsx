@@ -6,6 +6,7 @@ import Services from './components/Services';
 // import Solution from './components/Solution';
 import Footer from './components/Footer';
 import Contact from './components/Contact';
+import ScrollToTop from './components/ScrollToTop';
 import { preloadCriticalImages } from './utils/imagePreloader';
 
 const App = () => {
@@ -23,6 +24,7 @@ const App = () => {
       {/* <section id="solution"><Solution /></section> */}
       <section id="contact"><Contact /></section>
       <Footer/>
+      <ScrollToTop />
     </div>
   );
 };
