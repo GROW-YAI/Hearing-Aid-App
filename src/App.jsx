@@ -7,6 +7,7 @@ import Services from './components/Services';
 import Footer from './components/Footer';
 import Contact from './components/Contact';
 import ScrollToTop from './components/ScrollToTop';
+import BoafoWidgetInitializer from './components/BoafoWidgetInitializer';
 import { preloadCriticalImages } from './utils/imagePreloader';
 
 const App = () => {
@@ -17,6 +18,7 @@ const App = () => {
 
   return (
     <div>
+      <BoafoWidgetInitializer />
       <Navbar />
       <section id="home"><Home /></section>
       <section id="services"><Services /></section>
